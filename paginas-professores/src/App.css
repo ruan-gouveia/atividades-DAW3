@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+/* MENU */
+.menu {
+  background-color: #006633;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.menu-logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 16px 20px 16px 0;
+  border-right: 1px solid rgba(255,255,255,0.3);
+  margin-right: 10px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 4px;
+}
+
+.menu-links button {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.85);
+  padding: 18px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-bottom: 3px solid transparent;
+}
+
+.menu-links button:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.menu-links button.ativo {
+  color: white;
+  font-weight: 600;
+  border-bottom: 3px solid white;
+}
+
+.conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.banner {
+  background-color: #006633;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.banner h1 {
+  font-size: 26px;
+}
+
+.banner p {
+  margin-top: 6px;
+  opacity: 0.85;
+  font-size: 14px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card-professor {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  border-top: 4px solid #006633;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.card-professor:hover {
+  transform: translateY(-4px);
+}
+
+.card-avatar {
+  width: 56px;
+  height: 56px;
+  background-color: #006633;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.card-professor h3 {
+  font-size: 16px;
+  color: #006633;
+  margin-bottom: 6px;
+}
+
+.card-professor p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.card-professor span {
+  font-size: 12px;
+  background: #e6f2ec;
+  color: #006633;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.pagina-professor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-top: 4px solid #006633;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #006633;
+  margin-bottom: 20px;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tabela th {
+  background-color: #006633;
+  color: white;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.tabela td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.campo label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #006633;
+}
+
+.campo textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-cadastrar {
+  width: 100%;
+  padding: 12px;
+  background-color: #006633;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-cadastrar:hover {
+  background-color: #004d26;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.modal h3 {
+  font-size: 20px;
+  color: #006633;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info p:last-child {
+  border-bottom: none;
+}
+
+.btn-fechar {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #006633;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-fechar:hover {
+  background: #004d26;
+}
