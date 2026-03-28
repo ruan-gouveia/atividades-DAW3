@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Menu from "./components/menu";
+import Menu from "./components/Menu";
 import PaginaInicial from "./components/PaginaInicial";
 import PaginaProfessor from "./components/PaginaProfessor";
 
