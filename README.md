@@ -2,7 +2,7 @@
 
 Repositório com as atividades desenvolvidas na disciplina de **Desenvolvimento de Aplicações Web III** do IFPB, utilizando **React + Vite**.
 
-🔗 **[Acesse as atividades online](URL_DA_VERCEL_AQUI)**
+🔗 **[Acesse as atividades online](https://atividades-daw-3.vercel.app)**
 
 ---
 
